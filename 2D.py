@@ -3,7 +3,7 @@ from math import *
 import matplotlib.pyplot as plt
 import time
 from pylab import *
-
+from matplotlib.patches import FancyArrowPatch
 
 def dist_calc(x1, y1, x2, y2):
     global dx, dy, theta
@@ -73,6 +73,7 @@ def main():
     GoalError_x = xgoal - robot_x
     GoalError_y = ygoal - robot_y
     traj = []
+    fig, ax = plt.subplots()
 
     TotalError = np.linalg.norm([GoalError_x,GoalError_y]) 
     while(iter_num < MaxSteps) & (TotalError>1.1):

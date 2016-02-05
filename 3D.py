@@ -70,7 +70,7 @@ def main():
     MaxSteps = 700
     xpos, ypos, zpos = 0,0,0
     xgoal, ygoal,zgoal = 500,500,500
-    ObstacleNumber = 100
+    ObstacleNumber = 10
     RadiusOfInfluence = 50 #If obstacles are 20, decrease RadiusOfInfluence
     RadiusofObstacle = 2
     alpha = 1
